@@ -1,4 +1,3 @@
-<<<<<<< Original
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.quangdung.demo3" >
@@ -18,27 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SubAct1"
-            android:label="Action1"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity
-            android:name=".SubAct2"
-            android:label="Action2"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity
-            android:name=".SubAct1"
+            android:name="com.example.quangdung.demo3.SubAct1"
             android:label="@string/title_activity_sub_act1" >
         </activity>
-    </application>
-
-</manifest>
-
-=======
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <application>
         <activity android:name="com.example.quangdung.demo3.SubAct2"
             android:label="@string/title_activity_sub_act2"
             >
@@ -46,4 +27,3 @@
     </application>
 
 </manifest>
->>>>>>> Added

@@ -7,6 +7,88 @@
     tools:context="com.example.quangdung.demo3.SubAct1">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tro ve"
+        android:id="@+id/btn_sub1"
+        android:layout_marginBottom="61dp"
+        android:width="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="So A:"
+        android:id="@+id/soA_text"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="So B:"
+        android:id="@+id/soB_text"
+        android:layout_below="@+id/soA_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn_tong2"
+        android:text="Tong"
+        android:id="@+id/btnTong"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/ketqua"
+        android:layout_alignLeft="@+id/Kq_edit"
+        android:layout_alignStart="@+id/Kq_edit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soA_edit"
+        android:layout_alignBottom="@+id/soA_text"
+        android:layout_toRightOf="@+id/soA_text"
+        android:layout_alignRight="@+id/btnTong"
+        android:layout_alignEnd="@+id/btnTong" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soB_edit"
+        android:layout_alignBottom="@+id/soB_text"
+        android:layout_toRightOf="@+id/soA_text"
+        android:layout_alignRight="@+id/soA_edit"
+        android:layout_alignEnd="@+id/soA_edit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ket Qua:"
+        android:id="@+id/ketqua"
+        android:layout_below="@+id/soB_text"
+        android:layout_toRightOf="@+id/soB_text"
+        android:layout_toEndOf="@+id/soB_text"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Kq_edit"
+        android:layout_alignBottom="@+id/ketqua"
+        android:layout_toRightOf="@+id/ketqua"
+        android:layout_alignRight="@+id/btn_sub1"
+        android:layout_alignEnd="@+id/btn_sub1" />
 
 </RelativeLayout>
