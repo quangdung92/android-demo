@@ -15,8 +15,100 @@
         android:layout_height="wrap_content"
         android:text="Return"
         android:id="@+id/btn_sub2"
-        android:layout_below="@+id/textView3"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="134dp" />
+        android:layout_marginBottom="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height:"
+        android:id="@+id/height_label"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight:"
+        android:id="@+id/weight_label"
+        android:layout_below="@+id/height_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_input"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/btn_sub2"
+        android:layout_alignEnd="@+id/btn_sub2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_input"
+        android:layout_alignBottom="@+id/weight_label"
+        android:layout_toRightOf="@+id/weight_label"
+        android:layout_alignRight="@+id/height_input"
+        android:layout_alignEnd="@+id/height_input" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dochiso"
+        android:text="Do chi so"
+        android:id="@+id/btn_dochiso"
+        android:singleLine="false"
+        android:layout_below="@+id/weight_input"
+        android:layout_alignRight="@+id/danhgia"
+        android:layout_alignEnd="@+id/danhgia"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Danh gia"
+        android:id="@+id/danhgia_label"
+        android:layout_below="@+id/btn_dochiso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BMI"
+        android:id="@+id/BMI_label"
+        android:layout_above="@+id/btn_sub2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="81dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/danhgia"
+        android:layout_alignBottom="@+id/danhgia_label"
+        android:layout_alignRight="@+id/btn_sub2"
+        android:layout_alignEnd="@+id/btn_sub2"
+        android:layout_toRightOf="@+id/danhgia_label"
+        android:layout_toEndOf="@+id/danhgia_label" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chiso"
+        android:layout_alignBottom="@+id/BMI_label"
+        android:layout_toRightOf="@+id/BMI_label"
+        android:layout_alignRight="@+id/danhgia"
+        android:layout_alignEnd="@+id/danhgia" />
 
 </RelativeLayout>

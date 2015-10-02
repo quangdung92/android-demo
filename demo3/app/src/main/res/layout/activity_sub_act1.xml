@@ -45,11 +45,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="btn_tong2"
+        android:onClick="tinhtong"
         android:text="Tong"
         android:id="@+id/btnTong"
         android:layout_marginTop="65dp"
-        android:layout_below="@+id/ketqua"
+        android:layout_below="@+id/BMI_label"
         android:layout_alignLeft="@+id/Kq_edit"
         android:layout_alignStart="@+id/Kq_edit" />
 
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Ket Qua:"
-        android:id="@+id/ketqua"
+        android:id="@+id/BMI_label"
         android:layout_below="@+id/soB_text"
         android:layout_toRightOf="@+id/soB_text"
         android:layout_toEndOf="@+id/soB_text"
@@ -86,9 +86,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Kq_edit"
-        android:layout_alignBottom="@+id/ketqua"
-        android:layout_toRightOf="@+id/ketqua"
+        android:layout_alignBottom="@+id/BMI_label"
+        android:layout_toRightOf="@+id/BMI_label"
         android:layout_alignRight="@+id/btn_sub1"
         android:layout_alignEnd="@+id/btn_sub1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tinhhieu"
+        android:text="Hieu"
+        android:id="@+id/btnHieu"
+        android:layout_alignBottom="@+id/btnTong"
+        android:layout_alignRight="@+id/BMI_label"
+        android:layout_alignEnd="@+id/BMI_label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="boiso"
+        android:text="Boi So"
+        android:id="@+id/btnBoiSo"
+        android:layout_alignTop="@+id/btnTong"
+        android:layout_toRightOf="@+id/btnTong"
+        android:layout_toEndOf="@+id/btnTong" />
 
 </RelativeLayout>

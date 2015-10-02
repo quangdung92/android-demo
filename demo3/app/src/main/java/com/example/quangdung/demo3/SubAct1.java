@@ -1,11 +1,14 @@
 package com.example.quangdung.demo3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class SubAct1 extends AppCompatActivity {
 
@@ -22,6 +25,45 @@ public class SubAct1 extends AppCompatActivity {
         });
     }
 
+    //    Tinh Tong
+    public void tinhtong(View v) {
+        EditText soA = (EditText) findViewById(R.id.soA_edit);
+        int a = Integer.parseInt(soA.getText()+"");
+
+        EditText soB = (EditText) findViewById(R.id.soB_edit);
+        int b = Integer.parseInt(soB.getText()+"");
+
+        TextView ketqua = (TextView) findViewById(R.id.Kq_edit);
+        ketqua.setText((a + b) + "");
+    }
+
+    //    Tinh Hieu
+    public void tinhhieu(View v) {
+        EditText soA = (EditText) findViewById(R.id.soA_edit);
+        int a = Integer.parseInt(soA.getText()+"");
+
+        EditText soB = (EditText) findViewById(R.id.soB_edit);
+        int b = Integer.parseInt(soB.getText()+"");
+
+        TextView ketqua = (TextView) findViewById(R.id.Kq_edit);
+        ketqua.setText((a - b) + "");
+    }
+    //    Tinh Hieu
+    public void boiso(View v) {
+        EditText soA = (EditText) findViewById(R.id.soA_edit);
+        int a = Integer.parseInt(soA.getText()+"");
+
+        EditText soB = (EditText) findViewById(R.id.soB_edit);
+        int b = Integer.parseInt(soB.getText()+"");
+
+        if (a%b == 0) {
+            TextView ketqua = (TextView) findViewById(R.id.Kq_edit);
+            ketqua.setText(true + "");
+        } else {
+            TextView ketqua = (TextView) findViewById(R.id.Kq_edit);
+            ketqua.setText(false + "");
+        }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
