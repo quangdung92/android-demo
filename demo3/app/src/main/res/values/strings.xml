@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_sub_act1">SubAct1</string>
     <string name="title_activity_sub_act2">SubAct2</string>
+    <string name="title_activity_temperate_c">temperate_c</string>
+    <string name="title_activity_sub_act3">SubAct3</string>
 </resources>

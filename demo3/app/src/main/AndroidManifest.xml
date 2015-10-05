@@ -17,12 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.quangdung.demo3.SubAct1"
+            android:name=".SubAct1"
             android:label="@string/title_activity_sub_act1" >
         </activity>
-        <activity android:name="com.example.quangdung.demo3.SubAct2"
-            android:label="@string/title_activity_sub_act2"
-            >
+        <activity
+            android:name=".SubAct2"
+            android:label="@string/title_activity_sub_act2" >
+        </activity>
+        <activity
+            android:name=".SubAct3"
+            android:label="@string/title_activity_sub_act3" >
         </activity>
     </application>
 

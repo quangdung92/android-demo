@@ -47,7 +47,7 @@ public class SubAct2 extends AppCompatActivity {
                 } else if(BMI <= 29.9) {
                     cd = "Ban bat dau beo";
                 } else {
-                    cd = "Ban qua beo, super fat";
+                    cd = "Ban qua beo, super fat!!";
                 }
                 danhgia.setText(cd);
             }
