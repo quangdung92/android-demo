@@ -55,6 +55,7 @@
         android:id="@+id/C_btn"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
+        android:tag="CtoF"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -62,6 +63,7 @@
         android:layout_height="wrap_content"
         android:text="F to C"
         android:id="@+id/F_btn"
+        android:tag="FtoC"
         android:layout_alignBottom="@+id/C_btn"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
