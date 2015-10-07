@@ -1,6 +1,9 @@
 package com.example.quangdung.demo3;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,11 +13,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements fragment_two.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(
+                this,"on Create main", Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_main);
         Button btn1 = (Button) findViewById(R.id.button);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +43,26 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SubAct3.class);
                 startActivity(intent);
+            }
+        });
+        Button btn_list = (Button) findViewById(R.id.btn_ListView);
+        btn_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListOne.class);
+                startActivity(intent);
+            }
+        });
+        Button btnfragment = (Button) findViewById(R.id.btn_fragment);
+        btnfragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragment = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragment.beginTransaction();
+                fragment_two fragTwo = new fragment_two();
+                fragmentTransaction.replace(android.R.id.content, fragTwo);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
         Button btnQuit = (Button) findViewById(R.id.btn_quit);
@@ -95,5 +120,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

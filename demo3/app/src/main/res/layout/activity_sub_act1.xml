@@ -111,4 +111,13 @@
         android:layout_toRightOf="@+id/btnTong"
         android:layout_toEndOf="@+id/btnTong" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhay sub"
+        android:id="@+id/nhay_sub"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/BMI_label"
+        android:layout_alignStart="@+id/BMI_label" />
+
 </RelativeLayout>

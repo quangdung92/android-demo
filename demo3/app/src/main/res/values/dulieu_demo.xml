@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dulieu_demo">
+        <item>Lop1</item>
+        <item>Lop2</item>
+        <item>Lop3</item>
+        <item>Lop4</item>
+        <item>Lop5</item>
+    </string-array>
+</resources>

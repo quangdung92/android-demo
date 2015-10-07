@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SubAct1 extends AppCompatActivity {
 
@@ -24,7 +25,32 @@ public class SubAct1 extends AppCompatActivity {
                 finish();
             }
         });
+        Button nhay_sub = (Button) findViewById(R.id.nhay_sub);
+        nhay_sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SubAct1.this, SubAct2.class);
+                startActivity(intent);
+            }
+        });
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText
+                (this, "on remuse act1", Toast.LENGTH_LONG)
+                .show();
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(
+                this, "on Stop act1", Toast.LENGTH_LONG).show();
+    }
+
+
+
+
 
     //    Tinh Tong
     public void tinhtong(View v) {

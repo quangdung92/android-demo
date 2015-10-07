@@ -7,4 +7,9 @@
     <string name="title_activity_sub_act2">SubAct2</string>
     <string name="title_activity_temperate_c">temperate_c</string>
     <string name="title_activity_sub_act3">SubAct3</string>
+    <string name="title_activity_list_view">ListView</string>
+    <string name="title_activity_list_one">ListOne</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

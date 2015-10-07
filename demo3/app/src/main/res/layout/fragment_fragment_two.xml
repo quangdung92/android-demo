@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.quangdung.demo3.fragment_two">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView android:layout_width="match_parent" android:layout_height="588dp"
+        android:text="You Win !!"
+        android:layout_gravity="center"
+        android:background="#b45555"
+        android:autoText="false"
+        android:id="@+id/frag_two_text"
+        android:textSize="50dp" />
+
+</FrameLayout>
