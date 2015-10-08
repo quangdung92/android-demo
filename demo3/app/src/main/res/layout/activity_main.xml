@@ -90,4 +90,14 @@
         android:layout_alignTop="@+id/btn_ListView"
         android:layout_alignLeft="@+id/button3"
         android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kaisha"
+        android:id="@+id/btn_kaisha"
+        android:background="#999cd3d3"
+        android:layout_alignTop="@+id/btn_fragment"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout" />
 </RelativeLayout>

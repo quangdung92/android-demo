@@ -65,6 +65,14 @@ public class MainActivity extends AppCompatActivity implements fragment_two.OnFr
                 fragmentTransaction.commit();
             }
         });
+        Button btn_kaishain = (Button) findViewById(R.id.btn_kaisha);
+        btn_kaishain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, kaishain.class);
+                startActivity(intent);
+            }
+        });
         Button btnQuit = (Button) findViewById(R.id.btn_quit);
         btnQuit.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,7 +32,10 @@
             android:name=".ListOne"
             android:label="@string/title_activity_list_one" >
         </activity>
-
+        <activity
+            android:name=".kaishain"
+            android:label="@string/title_activity_kaishain" >
+        </activity>
     </application>
 
 </manifest>
