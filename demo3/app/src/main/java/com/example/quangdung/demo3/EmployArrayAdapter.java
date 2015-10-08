@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -27,9 +28,15 @@ public class EmployArrayAdapter extends ArrayAdapter<Employs> {
     public View getView(int position, View convertView, ViewGroup parrent) {
         LayoutInflater inflaster = context.getLayoutInflater();
         convertView = inflaster.inflate(layoutId, null);
-        final TextView name_text = convertView.findViewById(R.id.txtitem);
+        final TextView name_text = (TextView) convertView.findViewById(R.id.txtitem);
         final Employs emp = employs_arr.get(position);
-
-
+        name_text.setText(emp.toString());
+        ImageView sex_icon = (ImageView) convertView.findViewById(R.id.imgitem);
+        if (emp.isSex()) {
+            sex_icon.setImageResource(R.drawable.male);
+        } else {
+            sex_icon.setImageResource(R.drawable.female);
+        }
+        return convertView;
     }
 }
