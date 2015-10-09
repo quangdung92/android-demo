@@ -1,6 +1,7 @@
 package com.example.quangdung.demo3;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -28,11 +29,11 @@ public class EmployArrayAdapter extends ArrayAdapter<Employs> {
     public View getView(int position, View convertView, ViewGroup parrent) {
         LayoutInflater inflaster = context.getLayoutInflater();
         convertView = inflaster.inflate(layoutId, null);
-        final TextView name_text = (TextView) convertView.findViewById(R.id.txtitem);
+        TextView name_text = (TextView) convertView.findViewById(R.id.txtitem);
         final Employs emp = employs_arr.get(position);
         name_text.setText(emp.toString());
         ImageView sex_icon = (ImageView) convertView.findViewById(R.id.imgitem);
-        if (emp.isSex()) {
+        if (emp.isGender()) {
             sex_icon.setImageResource(R.drawable.male);
         } else {
             sex_icon.setImageResource(R.drawable.female);

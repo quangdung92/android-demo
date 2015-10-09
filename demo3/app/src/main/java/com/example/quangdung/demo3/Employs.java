@@ -4,35 +4,30 @@ package com.example.quangdung.demo3;
  * Created by quangdung on 08/10/2015.
  */
 public class Employs {
-    private boolean sex;
+    private String id;
     private String name;
-    private Integer id;
+    private boolean gender;
 
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public boolean isSex() {
-        return sex;
+    public boolean isGender() {
+        return gender;
     }
-
-    public void setSex(boolean sex) {
-        this.sex = sex;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
+    public void setGender(boolean gender) {
+        this.gender = gender;
     }
     @Override
     public String toString() {
-        return this.id+""+"-"+this.name;
+        return this.id+"-"+this.name;
     }
 }
