@@ -61,19 +61,19 @@ public class kaishain extends AppCompatActivity {
 
         //Set values to arrays
     }
-    public void xulyXoa()
-    {
-        for(int i=lvNhanvien.getChildCount()-1;i>=0;i--)
-        {
-            View v=lvNhanvien.getChildAt(i);
-            CheckBox chk=(CheckBox) v.findViewById(R.id.chkitem);
-            if(chk.isChecked())
-            {
-                arrEmployee.remove(i);
-            }
-        }
-        adapter.notifyDataSetChanged();
-    }
+//    public void xulyXoa()
+//    {
+//        for(int i=lvNhanvien.getChildCount()-1;i>=0;i--)
+//        {
+//            View v=lvNhanvien.getChildAt(i);
+//            CheckBox chk=(CheckBox) v.findViewById(R.id.chkitem);
+//            if(chk.isChecked())
+//            {
+//                arrEmployee.remove(i);
+//            }
+//        }
+//        adapter.notifyDataSetChanged();
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
